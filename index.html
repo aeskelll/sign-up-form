@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div>Welcome back!</div>
+            <form action="" method="get">
+                <div class="formContainer">
+                    <div>
+                        <ul>
+                            <li>
+                                <label for="fName">FIRST NAME</label>
+                                <input type="text" name="fName" id="fName" placeholder="George" required>
+                            </li>
+                            <li>
+                                <label for="mail">EMAIL</label>
+                                <input type="email" name="mail" id="mail" placeholder="yourEmail@example.com" required>
+                            </li>
+                            <div>
+                                <label for="pass">PASSWORD</label>
+                                <input type="password" name="pass" id="pass" placeholder="************" required>
+                            </div>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <label for="sName">LAST NAME</label>
+                                <input type="text" name="sName" id="sName" placeholder="Silva" required>
+                            </li>
+                            <li>
+                                <label for="phone">PHONE NUMBER</label>
+                                <input type="tel" name="phone" id="phone" placeholder="0123456789" maxlength="10" pattern="[0-9]{10}" required>
+                            </li>
+                            <div>
+                                <label for="confirmPass">CONFIRM PASSWORD</label>
+                                <input type="password" name="confirmPass" id="confirmPass" placeholder="************" required>
+                            </div>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="btn">
+                    <button type="submit" class="confButton">CREATE ACCOUNT</button>
+                </div>
+            </form>
+            <div class="bottom">
+                <div>Already have an account? <a href="" class="logIn">LOG IN</a></div>
+            </div>
+        </div>
+
+        <div class="right">
+            <div class="imgContainer">
+                <img src="img/bg.jpg" alt="background">
+            </div>
+            <div class="rightContent">
+                <div class="header">
+                    <div>
+                        <img src="img/icon.svg" alt="icon" class="brandImage">
+                    </div>
+                    <div class="brandName">Tailor store</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

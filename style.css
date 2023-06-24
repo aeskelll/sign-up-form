@@ -1,0 +1,209 @@
+/*reset css prop*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*main css*/
+html{
+    height: 100%;
+}
+body{
+    background-color: rgb(220, 189, 154);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight:normal;
+    font-style:normal;
+    min-height: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.brandImage{
+    height: 130px;
+    width: 130px;
+}
+
+.left{
+    height: 100vh;
+    width: 50vw;
+}
+
+.right{
+    height: 100vh;
+    width: 50vw;
+}
+
+.imgContainer{
+    position: fixed;
+    z-index: 1;
+    display: block;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+
+}
+
+.rightContent{
+    position: fixed;
+    z-index: 9999;
+}
+
+.imgContainer > img{
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.left{
+    border-right: 5px solid rgb(53, 43, 32);
+}
+
+.left > div:first-child{
+    margin-top: 150px;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+label{
+    font-size: 18px;
+    color: rgb(60, 60, 60);
+}
+
+input{
+    padding: 5px;
+    width: 100%;
+    border: 2px solid grey;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+input:hover{
+    background-color: rgb(227, 227, 227);
+}
+
+input:valid{
+    background-color: rgb(175, 215, 175);
+}
+
+input:invalid{
+    background-color: rgb(237, 204, 204);
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+li{
+    margin-bottom: 60px;
+}
+
+button{
+    font-size: 15px;
+    padding: 10px;
+    border: 1px solid grey;
+    border-radius: 2px;
+}
+
+button:hover{
+    background-color: #d9d9d9;
+    border: 1px solid white;
+    font-weight: 800;
+}
+
+button:focus{
+    color: white;
+    background-color: rgb(195, 195, 195);
+    border: 1px solid white;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.bottom > div{
+    font-size: 17px;
+}
+
+.logIn{
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px white;
+}
+
+.logIn:hover{
+    color: white;
+}
+
+.imgContainer > .header{
+    position: relative;
+}
+
+.header{
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    position: absolute;
+    background-color: rgb(246, 246, 230);
+    opacity: 0.8;
+    top: 50px;
+}
+
+.brandName{
+    font-size:70px;
+}
+
